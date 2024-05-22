@@ -59,7 +59,7 @@ end
 getgenv().kohlsexecuted = true
 
 -- The prefix you are using for KohlsLite. This can be of any length.
-getgenv().deprefix = "p/" 
+getgenv().deprefix = "." 
 
 -- The version of KohlsLite
 getgenv().klversion = "1.57"
@@ -82,7 +82,7 @@ else
 end
 
 -- Defaults (you can change these)
-local defaults = {"p/perm", "p/unwelmsg", "p/antikill me"}
+local defaults = {".prefix -", ".antikill me", ".unwelmsg "}
 
 -- Misc variables (ignore these)
 local bending -- ignore
@@ -127,8 +127,18 @@ end
 
 -- Serverlocked users
 local blacklist = {
-    "SlenderMaasdn990921",
-
+    "SlenderMan990921",
+    "e5usp",
+    "Asphetto",
+    "91txt",
+    "LeanConsumer69",
+    "Fixydrqma",
+    "Robloxian577226532",
+    "jjthejoker7",
+    "cihanahmet1670",
+    "Fu14r",
+    "bbgurrrrl",
+    "He4rt_4"
 }
 
 -- Users not affected by serverlock
@@ -136,20 +146,94 @@ local whitelist = {}
 
 -- Perm Whitelist
 local pwl = {
-    "me_12asdasd3eq",
-
+    "me_123eq",
+    "me_crashking",
+    "ScriptingProgrammer",
+    "t_echr",
+    "BANNter_Original",
+    "witnessfox22",
+    "IceStuds",
+    "atprog",
+    "dawninja21",
+    "Dawninja21alt",
+    "Di33le2",
+    "darkmadeboy",
+    "Dekryptionite",
+    "3cxos",
+    "hudhejeir",
+    "BIGpe7niss7",
+    "clydekash",
+    "t_echl",
+    "Ih0temyIife",
+    "D_ionte",
+    "SZCVAK",
+    "TheRealestOnHere",
+    "Altsarecooleh",
+    "idonthacklol101ns",
+    "Me_ChurchOfSat4n",
+    "Milderous",
+    "Anka_707587",
+    "DionteIsCute",
+    "me_capybara",
+    "E4_DQ",
+    "vgcrash",
+    "s_pisafurry"
 }
 
 -- Players you cannot kick
 local nokick = {
-    "me_12asdsad3eq",
- 
+    "me_123eq",
+    "me_crashking",
+    "ScriptingProgrammer",
+    "t_echr",
+    "BANNter_Original",
+    "witnessfox22",
+    "IceStuds",
+    "atprog",
+    "dawninja21",
+    "Dawninja21alt",
+    "Di33le2",
+    "darkmadeboy",
+    "Dekryptionite",
+    "3cxos",
+    "hudhejeir",
+    "BIGpe7niss7",
+    "clydekash",
+    "t_echl",
+    "Ih0temyIife",
+    "D_ionte",
+    "SZCVAK",
+    "TheRealestOnHere",
+    "Altsarecooleh",
+    "idonthacklol101ns",
+    "Me_ChurchOfSat4n",
+    "Milderous",
+    "Anka_707587",
+    "DionteIsCute",
+    "me_capybara",
+    "E4_DQ",
+    "vgcrash",
+    "s_pisafurry"
 }
 
 -- Players with special perms
 local specialperms = {
-    "me_123easdasdq",
-
+    "me_123eq",
+    "me_crashking",
+    "ScriptingProgrammer",
+    "t_echr",
+    "3cxos",
+    "t_echl",
+    "D_ionte",
+    "EternitHD",
+    "Milderous",
+    "DionteIsCute",
+    "Dekryptionite",
+    "atprog",
+    "3cxos",
+    "Di33le2",
+    "s_pisafurry",
+    "Palamode"
 }
 
 -- New users get blacklisted (prevent crashers)
@@ -162,8 +246,37 @@ local GWhitelisted = {}
 
 -- Perm Gear Whitelist
 local pgwl = {
-  "measdasd_123eq",
-
+  "me_123eq",
+    "me_crashking",
+    "ScriptingProgrammer",
+    "t_echr",
+    "BANNter_Original",
+    "witnessfox22",
+    "IceStuds",
+    "atprog",
+    "dawninja21",
+    "Dawninja21alt",
+    "Di33le2",
+    "darkmadeboy",
+    "Dekryptionite",
+    "3cxos",
+    "hudhejeir",
+    "BIGpe7niss7",
+    "clydekash",
+    "t_echl",
+    "Ih0temyIife",
+    "D_ionte",
+    "SZCVAK",
+    "TheRealestOnHere",
+    "Altsarecooleh",
+    "idonthacklol101ns",
+    "Me_ChurchOfSat4n",
+    "Milderous",
+    "Anka_707587",
+    "DionteIsCute",
+    "me_capybara",
+    "E4_DQ",
+    "vgcrash"
 }
 
 -- Serverlock
