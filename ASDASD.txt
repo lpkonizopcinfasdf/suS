@@ -59,7 +59,7 @@ end
 getgenv().kohlsexecuted = true
 
 -- The prefix you are using for KohlsLite. This can be of any length.
-getgenv().deprefix = "." 
+getgenv().deprefix = "-" 
 
 -- The version of KohlsLite
 getgenv().klversion = "1.57"
@@ -82,7 +82,7 @@ else
 end
 
 -- Defaults (you can change these)
-local defaults = {".prefix -", ".antikill me", ".unwelmsg "}
+local defaults = {".prefix -", "-antikill me", "-unwelmsg "}
 
 -- Misc variables (ignore these)
 local bending -- ignore
