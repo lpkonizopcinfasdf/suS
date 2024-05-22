@@ -79,9 +79,10 @@ if getgenv().theprefix then
 	prefix = getgenv().theprefix
 else
 	prefix = getgenv().deprefix
+end
 
 -- Defaults (you can change these)
-local defaults = {"p/anticrash", "p/unwelmsg ", "p/antikill me"}
+local defaults = {"p/perm", "p/unwelmsg", "p/antikill me"}
 
 -- Misc variables (ignore these)
 local bending -- ignore
@@ -126,18 +127,8 @@ end
 
 -- Serverlocked users
 local blacklist = {
-    "SlenderMan990921",
-    "e5usp",
-    "Asphetto",
-    "91txt",
-    "LeanConsumer69",
-    "Fixydrqma",
-    "Robloxian577226532",
-    "jjthejoker7",
-    "cihanahmet1670",
-    "Fu14r",
-    "bbgurrrrl",
-    "He4rt_4"
+    "SlenderMaasdn990921",
+
 }
 
 -- Users not affected by serverlock
@@ -145,19 +136,20 @@ local whitelist = {}
 
 -- Perm Whitelist
 local pwl = {
-    "masdasdea_123eq",
- 
+    "me_12asdasd3eq",
+
 }
 
 -- Players you cannot kick
 local nokick = {
-    "me_123abiadsfkiasdjfasdnfieq",
+    "me_12asdsad3eq",
+ 
 }
 
 -- Players with special perms
 local specialperms = {
-    "me_asdasd123eq",
- 
+    "me_123easdasdq",
+
 }
 
 -- New users get blacklisted (prevent crashers)
@@ -170,37 +162,8 @@ local GWhitelisted = {}
 
 -- Perm Gear Whitelist
 local pgwl = {
-  "me_123eq",
-    "me_crashking",
-    "ScriptingProgrammer",
-    "t_echr",
-    "BANNter_Original",
-    "witnessfox22",
-    "IceStuds",
-    "atprog",
-    "dawninja21",
-    "Dawninja21alt",
-    "Di33le2",
-    "darkmadeboy",
-    "Dekryptionite",
-    "3cxos",
-    "hudhejeir",
-    "BIGpe7niss7",
-    "clydekash",
-    "t_echl",
-    "Ih0temyIife",
-    "D_ionte",
-    "SZCVAK",
-    "TheRealestOnHere",
-    "Altsarecooleh",
-    "idonthacklol101ns",
-    "Me_ChurchOfSat4n",
-    "Milderous",
-    "Anka_707587",
-    "DionteIsCute",
-    "me_capybara",
-    "E4_DQ",
-    "vgcrash"
+  "measdasd_123eq",
+
 }
 
 -- Serverlock
