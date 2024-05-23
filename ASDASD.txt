@@ -82,7 +82,7 @@ else
 end
 
 -- Defaults (you can change these)
-local defaults = {".prefix -", "-antikill me", "-unwelmsg "}
+local defaults = {".prefix -", "-antikill me", "-unwelmsg ""-antijail me", "-anticrash", "-unnewplrslock "}
 
 -- Misc variables (ignore these)
 local bending -- ignore
