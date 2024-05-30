@@ -1,11 +1,11 @@
--- Thanks for using NOV8
-
-local idv = "12" -- skidded from kohlscool
-print("User id:"..idv) -- skidded from kohlscool
--- autoadmin all skidded too
 
 
--- Instances:
+local idv = "12" 
+print("User id:"..idv) 
+
+
+
+
 
 
 
@@ -1257,7 +1257,14 @@ wait(1)
       Chat("reset "..arg)
     end
   end
-  
+
+  if msg == prefix.."pmkick" then
+    Players:Chat((">Spam pm  "..player.name.." 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 ")) 
+
+Players:Chat(("respawn "..player.name.."  ")) 
+wait(0.25)
+Players:Chat(("punish  "..player.name.."  ")) 
+  end
   
   if string.sub(msg:lower(), 1, 4) == prefix.."bk " then
     local arg = string.sub(msg:lower(), 5, msg:len())
