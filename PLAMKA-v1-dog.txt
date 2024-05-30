@@ -2143,42 +2143,7 @@ game:GetService'Players':Chat(("respawn others"))
   end
   end
 
--- Here testing
 
-  createcmd(player, msg, prefix, "lck", function(arg)
-    if arg ~= "" then
-      forEach(Players:GetPlayers(), function(i,plr)
-        if string.sub(plr.name:lower(), 1, arg:len()) == arg:lower() then
-          if not table.find(banned, plr.name) then
-            table.insert(banned, plr.name)
-            alert(player, "Player "..plr.name.." has been BANNED")
-          else
-            alert(player, plr.name.." is already banned")
-          end
-        end
-      end)
-    else
-      alert(player, "You need to put an argument")
-    end
-  end, true)
-  createcmd(player, msg, prefix, "unlck", function(arg)
-    if arg ~= "" then
-      forEach(banned, function(ii, baned)
-        forEach(Players:GetPlayers(), function(i,pl)
-          if pl.name == baned then
-            if string.sub(baned:lower(), 1, arg:len()) == arg:lower() then
-              table.remove(banned, ii)
-              wait(.2)
-              alert(player, "Player "..baned.." has been UNBANNED")
-              Chat("respawn "..baned)
-            end
-          end
-        end)
-      end)
-    else
-      alert(player, "You need to put an argument")
-    end
-  end, true)
 
 --------------- ANTIS ----------------
 spawn(function()
