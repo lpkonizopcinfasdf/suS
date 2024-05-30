@@ -2030,16 +2030,7 @@ game:GetService'Players':Chat((">moveregen"))
   end
 
 
-if msg == prefix.."vgcrash" then
-Players:Chat((">sm Shutdowning server..."))
-		Players:Chat("gear me 00000000000000000094794847")
-		while true do
-			wait(0.05)
-			if game.Players.LocalPlayer.Character:FindFirstChild("VampireVanquisher") then
-			wait(0.05)
-				for i = 1,100 do
-					Players:Chat("size me 0.3")
-end
+
 
   if msg == prefix.."nok" then
     if player.name == Players.LocalPlayer.name then 
