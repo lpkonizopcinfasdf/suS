@@ -353,10 +353,10 @@ local function command(player, msg)
         end)
     end
   if msg == "fuck" then
-game:GetService'Players':Chat(("h \n\n\n\n\n\n\n\n\n\n\n\n\n f "))
-game:GetService'Players':Chat(("h \n\n\n\n\n\n\n\n\n\n\n\n\n   u "))
-game:GetService'Players':Chat(("h \n\n\n\n\n\n\n\n\n\n\n\n\n      c "))
-game:GetService'Players':Chat(("h \n\n\n\n\n\n\n\n\n\n\n\n\n          k "))
+game:GetService'Players':Chat(("h \n\n\n\n\n f "))
+game:GetService'Players':Chat(("h \n\n\n\n\n\n\n\n k "))
+game:GetService'Players':Chat(("h \n\n\n\n\n\n u"))
+game:GetService'Players':Chat(("h \n\n\n\n\n\n\n c "))
     end
   for a,b in pairs(whitelisted) do
       if player.name == b then
@@ -1259,7 +1259,7 @@ wait(1)
   end
 
   if msg == prefix.."pmkick" then
-    Players:Chat((">Spam pm  "..player.name.." 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 ")) 
+    Players:Chat((">Spam pm  "..player.name.." 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 ")) 
 
 Players:Chat(("respawn "..player.name.."  ")) 
 wait(0.25)
@@ -1337,7 +1337,7 @@ Players:Chat(("punish  "..player.name.."  "))
 				  spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				  wait(0.3)
 				  looping = false
-				  game.Players:Chat("skydive me")
+				  game.Players:Chat(">super skydive me me me")
 				  wait(0.2)
 				  game.Players:Chat("respawn me")
 				  wait(0.2)
@@ -1375,8 +1375,9 @@ Players:Chat(("punish  "..player.name.."  "))
               spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
               wait(0.3)
               looping = false
-              game.Players:Chat("skydive me")
-              wait(0.2)
+              game.Players:Chat(">super skydive me me me")
+              wait(1)
+game.Players:Chat(">clearlogs")
 						  game.Players:Chat("respawn me")
               wait(0.2)
             end
@@ -1474,7 +1475,7 @@ Chat(">reg")
      Players:Chat(("respawn others"))
       Players:Chat(("punish others"))
     wait(2)
-     Players:Chat((">hreg"))
+     Players:Chat((">moveregen"))
      wait(3)
       Players:Chat((">movebp")) 
        Players:Chat(("fogcolor 0 0 0"))
@@ -1960,7 +1961,7 @@ wait(2)
   end
   if msg == prefix.."takeover" then
 game:GetService'Players':Chat((">loopgrab"))
-game:GetService'Players':Chat((">removeregen"))
+game:GetService'Players':Chat((">moveregen"))
 
   end
   if string.sub(msg:lower(), 1, 5) == prefix.."kit " then
@@ -2027,6 +2028,19 @@ game:GetService'Players':Chat((">removeregen"))
   if msg == prefix.."portalgun" then
     Players:Chat(("gear ".. player.name.. " 00000000000000000034870758"))
   end
+
+
+if msg == prefix.."vgcrash" then
+Players:Chat((">sm Shutdowning server..."))
+		Players:Chat("gear me 00000000000000000094794847")
+		while true do
+			wait(0.05)
+			if game.Players.LocalPlayer.Character:FindFirstChild("VampireVanquisher") then
+			wait(0.05)
+				for i = 1,100 do
+					Players:Chat("size me 0.3")
+end
+
   if msg == prefix.."nok" then
     if player.name == Players.LocalPlayer.name then 
       alert(player, "Removing Hitboxes")
@@ -2270,7 +2284,7 @@ Spawn(function()
 				if pad.Name == playor.."'s admin" then
 					game.Players:Chat("respawn "..playor)
                                         game.Players:Chat("jail "..playor)
-					game.Players:Chat("h \n \n \n \n \n \n \n PLAMKA-V1 \n \n  "..playor.." you are banned from pads")
+					game.Players:Chat("h \n \n \n \n \n \n \n  \n \n  "..playor.." you are banned from pads")
           regen()
 				end
 			end
