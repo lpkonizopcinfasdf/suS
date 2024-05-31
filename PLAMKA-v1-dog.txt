@@ -1,5 +1,4 @@
 
-local ovc = 1
 local version = V1
 warn("Starting PLAMKA-V1")
 
