@@ -145,7 +145,7 @@ local function alert(plr, txt)
         FontSize = Enum.FontSize.Size8;
       }) 
       game.StarterGui:SetCore("SendNotification", {
-        Title = "KohlsCool";
+        Title = "PLAMKA";
         Text = txt;
         Duration = 5;
       })
