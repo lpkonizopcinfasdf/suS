@@ -2029,17 +2029,6 @@ game:GetService'Players':Chat((">removeregen"))
   end
 
 
-if msg == prefix.."vgcrash" then
-Players:Chat((">sm Shutdowning server..."))
-		Players:Chat("gear me 00000000000000000094794847")
-
-			wait(0.05)
-	Players:Chat(">alltools")
-			wait(0.05)
-				for i = 1,100 do
-					Players:Chat("size me 0.3")
-end
-
 
   if msg == prefix.."nok" then
     if player.name == Players.LocalPlayer.name then 
