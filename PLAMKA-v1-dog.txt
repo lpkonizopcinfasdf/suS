@@ -1960,7 +1960,7 @@ wait(2)
   end
   if msg == prefix.."takeover" then
 game:GetService'Players':Chat((">loopgrab"))
-game:GetService'Players':Chat((">moveregen"))
+game:GetService'Players':Chat((">removeregen"))
 
   end
   if string.sub(msg:lower(), 1, 5) == prefix.."kit " then
@@ -2032,9 +2032,9 @@ game:GetService'Players':Chat((">moveregen"))
 if msg == prefix.."vgcrash" then
 Players:Chat((">sm Shutdowning server..."))
 		Players:Chat("gear me 00000000000000000094794847")
-		while true do
+
 			wait(0.05)
-			if game.Players.LocalPlayer.Character:FindFirstChild("VampireVanquisher") then
+	Players:Chat(">alltools")
 			wait(0.05)
 				for i = 1,100 do
 					Players:Chat("size me 0.3")
