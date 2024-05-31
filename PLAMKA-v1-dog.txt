@@ -1257,8 +1257,7 @@ wait(1)
     end
   end
 
-  if msg == prefix.."pmkick" then
-    Players:Chat((">Spam pm  "..player.name.." 欟僌힆舸険餾㮍螵糨劸啹㛩賓鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㥠䑕嵶嬕賜猅蝗鴻栧燛菮殨凾㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢鷓靅宯輛遗閜䳗廙娴把睶䌋偣㥠䑕嵶鬾衼䠑䱧沟偣㚩慤鬿㖢貖矠䥌厀챟襓撨腪贍쮍䪸顜棺㟛讑宔誃竁䧿詥鸚襓撨腪贍蘾독醀㘛礢德릕䁪侗籟㘛礢德 ")) 
+
 
 Players:Chat(("respawn "..player.name.."  ")) 
 wait(0.25)
@@ -1419,6 +1418,10 @@ if msg == prefix.."loopgrab" then
 		end
 	end
   end
+
+if msg == prefix.."loopgrab" then
+getgenv().niggaballs = false
+
 if msg == prefix.."disco" then
     Players:Chat(("disco")) 
     Players:Chat(("time 0"))
@@ -1429,9 +1432,7 @@ if msg == prefix.."disco" then
   end
   
   
-  if msg == prefix.."unlg" then
-getgenv().niggaballs = false
-end
+
 
 
   
@@ -1478,7 +1479,7 @@ Chat(">reg")
      Players:Chat(("respawn others"))
       Players:Chat(("punish others"))
     wait(2)
-     Players:Chat((">moveregen"))
+     Players:Chat((">removeregen"))
      wait(3)
       Players:Chat((">movebp")) 
        Players:Chat(("fogcolor 0 0 0"))
@@ -2138,7 +2139,17 @@ game:GetService'Players':Chat(("respawn others"))
   end
   end
   end
-
+Spawn(function() 
+  while true do
+    forEach(banned, function(i,baned)
+      if game.Workspace:FindFirstChild(baned) then
+        game.Players:Chat(prefix.."jail "..baned)
+        Chat("punish "..baned)
+        Chat("blind "..baned)
+        Chat("pm "..baned.." You are locked.Please join next server.")
+        regen()
+      end
+    end)
 
 
 --------------- ANTIS ----------------
