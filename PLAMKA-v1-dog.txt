@@ -1,8 +1,4 @@
-function mysplit (inputstr, link, sep)
-  if link == nil then link = true end
-  if sep == nil then
-    sep = "%s"
-  end
+
   local t={}
   if link then
     inputstr = game:HttpGet(inputstr)
