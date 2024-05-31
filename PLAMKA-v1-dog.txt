@@ -23,7 +23,7 @@ local RunService = game:GetService("RunService")
 
 _G.prefix = "-" -- ONLY ONE CHARACTER
 
-local gui = loadstring(game:HttpGet("https://kohlscool.sergioesqnoguiina.repl.co/gui"))
+
 
 function forEach(tabla, func)
     for i,v in pairs(tabla) do
