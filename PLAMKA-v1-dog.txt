@@ -15,7 +15,7 @@ function mysplit (inputstr, link, sep)
 end
 
 local ovc = mysplit("https://kohlscool.sergioesquina.repl.co/version",true)
-local version = ovc[1].."."..(ovc[2]+1).."-Beta"
+local version = V1
 warn("Starting PLAMKA-V1")
 
 local RunService = game:GetService("RunService")
