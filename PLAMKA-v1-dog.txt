@@ -1,5 +1,4 @@
 
-local version = V1
 warn("Starting PLAMKA-V1")
 
 local RunService = game:GetService("RunService")
