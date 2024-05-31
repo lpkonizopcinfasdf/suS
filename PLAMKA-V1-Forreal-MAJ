@@ -157,7 +157,7 @@ local function alert(plr, txt)
       FontSize = Enum.FontSize.Size8;
     }) 
     game.StarterGui:SetCore("SendNotification", {
-      Title = "KohlsCool";
+      Title = "PLAMKA";
       Text = txt;
       Duration = 5;
     })
@@ -907,7 +907,7 @@ if player.name == b then
           spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
           wait(0.3)
           looping = false
-          game.Players:Chat("-super skydive me")
+          game.Players:Chat("skydive me")
           wait(0.2)
           game.Players:Chat("respawn me")
           wait(0.2)
@@ -1107,6 +1107,12 @@ if msg == prefix.."silcrash" then
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 end
 
+if string.sub(msg:lower(), 0, 7) == prefix.."super " then
+		
+		for i = 1,100 do
+			game.Players:Chat(string.sub(msg:lower(), 8))
+		end
+	end
 
   if msg == prefix.."antikill on" then
     if nokill == true then
