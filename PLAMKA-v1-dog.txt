@@ -2361,21 +2361,6 @@ for _, plr in pairs(game.Players:GetPlayers()) do
   end)
 end
 
-Spawn(function() 
-  while true do
-    if dead == true then
-      break;
-    end
-    forEach(banned, function(i,baned)
-      if game.Workspace:FindFirstChild(baned) then
-        --[[game.Players:Chat("freeze "..baned)
-        game.Players:Chat("punish "..baned)
-        game.Players:Chat("blind "..baned)
-        game.Players:Chat("setgrav "..baned.." -9e9")]]
-            game.Players:Chat("punish "..baned)
-        game.players:chat(">reg")
-      end
-    end)
 
 
 
