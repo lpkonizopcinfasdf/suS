@@ -1419,9 +1419,7 @@ if msg == prefix.."loopgrab" then
 	end
   end
 
-if msg == prefix.."unloopgrab" then
-getgenv().niggaballs = false
-end
+
 
 if msg == prefix.."disco" then
     Players:Chat(("disco")) 
