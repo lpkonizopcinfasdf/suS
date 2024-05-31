@@ -1,8 +1,8 @@
 -- Testing right now
 -- Visit Kohls Admin House Remake by ishade4real
 -- for the guys that say "thiz scriptz waz make by ishade4real", did you saw the code? did you have proofs? WERE can you use THIS SAME CODE without using this webpage?
-local version = "1.66"
-warn("Starting KohlsCool v"..version)
+local version = "1"
+warn("Starting PLAMKA v"..version)
 if game.Players.LocalPlayer.Character.Torso:FindFirstChild("Shirt") then
   game.Players.LocalPlayer.Character.Torso:FindFirstChild("Shirt"):Remove()
 end
