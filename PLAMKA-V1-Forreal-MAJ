@@ -280,7 +280,7 @@ local function sannounces()
   wait(0.5)
   Chat("respawn me")
   wait(0.2)
-  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("This game is now protected by KohlsCool v"..version, "All")
+
   Chat(prefix.."get")
 end
 
@@ -456,6 +456,15 @@ end)
 end
 if msg == "/c system" then
   Players:Chat((prefix.."sm "..player.name.. " is using /c system"))
+end
+if msg == "gear" then
+  Players:Chat(("ungear all all all"))
+end
+if msg == ":gear" then
+  Players:Chat(("ungear all all all"))
+end
+if msg == "::gear" then
+  Players:Chat(("ungear all all all"))
 end
 for a,b in pairs(whitelisted) do
 if player.name == b then
@@ -756,9 +765,8 @@ if player.name == b then
     sannounces()
   end)
 
-  createcmd(player, msg, prefix, "get", function()
-    sendchat("[KohlsCool v"..version.."]: To get KohlsCool, search in YouTube 'KohlsCool'")
-  end)
+
+
   createcmd(player, msg, prefix, "hop", function() -- From Shortcut
     local x = {}
     for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
