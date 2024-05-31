@@ -1955,13 +1955,7 @@ game:GetService'Players':Chat(("clone all"))
 
   end
 
-if msg == prefix.."vgcrash" then
-Players:Chat(("gear me 000000000000000000000000000094794847
-wait(0.25)
-Players:Chat((">alltools")
-wait(0.10)
-Players:Chat((">spam size me 0.3"))
-end
+
 
 
   if msg == prefix.."sc" then
