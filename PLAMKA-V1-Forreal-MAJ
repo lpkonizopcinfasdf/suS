@@ -1068,19 +1068,46 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
+LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
+
 ______________________________________
 
 ]])
 end
+if msg == prefix.."silcrash" then
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
+end
 
-  if msg == prefix.."nokill on" then
+
+  if msg == prefix.."antikill on" then
     if nokill == true then
       alert(player, "NoKill Already Enabled")
     end
     nokill = true
     alert(player, "NoKill Enabled")
   end
-  if msg == prefix.."nokill off" then
+  if msg == prefix.."antikill off" then
     if nokill == false then
       alert(player, "NoKill Already Disabled")
     end
