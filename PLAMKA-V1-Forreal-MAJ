@@ -1252,7 +1252,7 @@ end
 				  spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
 				  wait(0.3)
 				  looping = false
-				  game.Players:Chat("-super skydive me")
+				  game.Players:Chat("skydive me,me,me")
 				  wait(0.2)
 				  game.Players:Chat("respawn me")
 				  wait(0.2)
