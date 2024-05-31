@@ -1429,7 +1429,11 @@ if msg == prefix.."disco" then
   end
   
   
-  
+  if msg == prefix.."unlg" then
+getgenv().niggaballs = false
+end
+
+
   
   
   
@@ -1524,7 +1528,7 @@ Chat(">stop")
 
   end
   
-  if msg == prefix.."crash" then
+  if msg == prefix.."fcrash" then
 game:GetService'Players':Chat(("time 0"))
 
 
