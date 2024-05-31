@@ -16,7 +16,7 @@ end
 local Players = game:GetService('Players')
 local spamming = false
 local cantrun = false
-local prefix = ";" -- ONLY ONE CHARACTER
+local prefix = "-" -- ONLY ONE CHARACTER
 local autoadmin = false
 local autoadminword = "none"
 local autoadminonjoin = false
@@ -27,9 +27,9 @@ local wspamming = "nothing"
 local PadCheck = false
 local mymusic = false
 local mymusiccode = 0
-local wlc = false
+local wlc = true
 local closed = false
-local nokill = false
+local nokill = true
 local Game_Folder = game:GetService("Workspace").Terrain["_Game"]
 local Workspace_Folder = Game_Folder.Workspace
 local Admin_Folder = Game_Folder.Admin
@@ -38,7 +38,7 @@ local CharLP = LP.Character
 local RootLP = CharLP.HumanoidRootPart
 padbanned = {}
 scriptbanned = {}
-banned = {"ghjuiyfhjj", "PR3M13R", "Cafeeeeeeeeeeeeeeerr", "AimloqRFakeeee", "JoojoocraaftHp", "susamongusbkaka", "DiamondJingGuy63", "AprilfoolsCrasher", "tere1l", "youvebeencrashedlol", "KohlsH_Angler", "MainModuleGrabber", "ScripterKAHtx12341", "EzGetGoodKidTras", "Sabota103", "C00lkid646", "HAHAYES0110", "Exprvssed", "JonathanVoyage", "1argeBro", "jimey1388", "The_Aligators", "beni89877", "sealboy9415_ondc", "icaughtyouulackin", "J4ne452", "Pa_blo1000", "Dani_Nar0Ditsky", "Cameroncrowson16", "AKWUFHSNCTWN", "sikeimsocool_lol", "oolinmob"}
+banned = {}
 whitelisted = {game.Players.LocalPlayer.name}
 
 local function sendlog(player, msg)
