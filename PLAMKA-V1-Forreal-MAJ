@@ -1162,11 +1162,6 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
 
-if msg prefix.."allp" then
-Players:Chat("-regen")
-wait(0.25)
-Players:Chat("-allpads")
-end
 
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
