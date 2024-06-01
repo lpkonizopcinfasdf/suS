@@ -1162,6 +1162,12 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
 
+if msg prefix.."allp" then
+Players:Chat("-regen")
+wait(0.25)
+Players:Chat("-allpads")
+end
+
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
