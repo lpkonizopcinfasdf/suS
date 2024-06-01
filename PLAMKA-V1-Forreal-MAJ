@@ -1691,5 +1691,3 @@ game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 wait(1)
 game.Players:Chat(prefix.."loveg")
-
-
