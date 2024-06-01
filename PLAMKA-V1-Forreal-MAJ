@@ -1161,7 +1161,7 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
-
+end
 
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
@@ -1773,6 +1773,4 @@ game.Players:Chat(prefix.."antikill on")
 game.Players:Chat(prefix.."antikill")
 wait(1)
 game.Players:Chat(prefix.."loveg")
-game.players:Chat("-regen")
-wait(0.26)
-game.Players:Chat("-allpads")
+
