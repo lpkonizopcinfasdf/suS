@@ -1188,40 +1188,72 @@ wait(0.25)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 end
 
-if string.sub(msg:lower(), 0, 18) == prefix.."moveadmindividers" then
-        if Stable_Check == false then
-            logn("{Move.lua} Moving Admin Dividers")
-            Stable_Check = true
-            for i, v in pairs(Workspace_Folder["Admin Dividers"]:GetChildren()) do
-                if v.CFrame.Y < 500 then
-                    repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 
-                    local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-                    local looping = true
+if msg == prefix.."fixp" then
+		game.Players:Chat("gear me 00000000000000000018474459")
+		wait(1)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
+		wait(0.50)
+		
+		coroutine.wrap(function()
+			colorAPI.colorHouse({
+				wallsC = colorAPI.transformToColor3(BrickColor.new("Brick yellow")),
+				baseC = colorAPI.transformToColor3(BrickColor.new("Bright green")),
+				roofC = colorAPI.transformToColor3(BrickColor.new("Bright red")),
+				WANDDC = colorAPI.transformToColor3(BrickColor.new("Dark orange")),
+				stairsC = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
+				floorC = colorAPI.transformToColor3(BrickColor.new("Medium blue")),
+				rooftsC = colorAPI.transformToColor3(BrickColor.new("Reddish brown")),
+				chiC = colorAPI.transformToColor3(BrickColor.new("Sand red"))
+			})
+		end)()
+		
+		coroutine.wrap(function()
+			colorAPI.colorBuildingBricks({
+				DarkStoneGrey = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
+				DeepBlue = colorAPI.transformToColor3(BrickColor.new("Deep blue")),
+				NY = colorAPI.transformToColor3(BrickColor.new("New Yeller")),
+				IW = colorAPI.transformToColor3(BrickColor.new("Institutional white")),
+				LimeGreen = colorAPI.transformToColor3(BrickColor.new("Lime green")),
+				MSG = colorAPI.transformToColor3(BrickColor.new("Really black")),
+				RB = colorAPI.transformToColor3(BrickColor.new("Really red")),
+				TP = colorAPI.transformToColor3(BrickColor.new("Toothpaste"))
+			})
+		end)()
+		
+		colorAPI.color(game.Workspace.Terrain["_Game"].Workspace["Baseplate"], colorAPI.transformToColor3(BrickColor.new("Shamrock")))
+		
+		spawn(function()
+			colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
+		end)
 
-                    spawn(function()
-                        while true do
-                            game:GetService('RunService').Heartbeat:Wait()
-                            game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
-                            cf.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
-                            if not looping then break end
-                        end
-                    end)
-                    spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
-                    wait(0.3)
-                    looping = false
-                    game.Players:Chat("skydive me")
-                    wait(0.2)
-					game.Players:Chat("respawn me")
-                    wait(0.2)
-                end
-            end
-            wait(0.5)
-            Stable_Check = false
-            logn("{Move.lua} Done Moving Admin Dividers")
-        else
-            logn("{Move.lua} Already Moving, Please Wait")
-        end
+		spawn(function()
+			colorAPI.colorObbyBricks(colorAPI.transformToColor3(BrickColor.new("Really red")))
+		end)
+
+		spawn(function()
+			colorAPI.colorAdminDivs(colorAPI.transformToColor3(BrickColor.new("Dark stone grey")))
+		end)
+
+		spawn(function()
+			colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")))
+		end)
+	end
+
+
+if msg == prefix.."rpaint" then
+
+		game.Players:Chat("gear me 00000000000000000018474459")
+		wait(1)
+		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
+		wait(0.25)
+		for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+			coroutine.wrap(function()
+				if v:IsA("Part") then
+					colorAPI.color(v, Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
+				end
+			end)()
+		end
 	end
 	
 	if string.sub(msg:lower(), 0, 8) == prefix.."control" then
