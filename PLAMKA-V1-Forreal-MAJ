@@ -1420,7 +1420,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
       end
     end
   end
-  if msg == prefix.."h" then
+  if msg == prefix.."house" then
     if player.name == Players.LocalPlayer.name then
       local pos = CFrame.new(-12.5,8,94.5) 
       Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
