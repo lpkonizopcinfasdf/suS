@@ -1188,7 +1188,55 @@ wait(0.25)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 end
 
+if string.sub(msg:lower(), 0, 18) == prefix.."moveadmindividers" then
+        if Stable_Check == false then
+            logn("{Move.lua} Moving Admin Dividers")
+            Stable_Check = true
+            for i, v in pairs(Workspace_Folder["Admin Dividers"]:GetChildren()) do
+                if v.CFrame.Y < 500 then
+                    repeat wait() until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
 
+                    local cf = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+                    local looping = true
+
+                    spawn(function()
+                        while true do
+                            game:GetService('RunService').Heartbeat:Wait()
+                            game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+                            cf.CFrame = v.CFrame * CFrame.new(-1*(v.Size.X/2)-(game.Players.LocalPlayer.Character['Torso'].Size.X/2), 0, 0)
+                            if not looping then break end
+                        end
+                    end)
+                    spawn(function() while looping do wait(.1) game.Players:Chat('unpunish me') end end)
+                    wait(0.3)
+                    looping = false
+                    game.Players:Chat("skydive me")
+                    wait(0.2)
+					game.Players:Chat("respawn me")
+                    wait(0.2)
+                end
+            end
+            wait(0.5)
+            Stable_Check = false
+            logn("{Move.lua} Done Moving Admin Dividers")
+        else
+            logn("{Move.lua} Already Moving, Please Wait")
+        end
+	end
+	
+	if string.sub(msg:lower(), 0, 8) == prefix.."control" then
+		local plr = string.sub(msg:lower(), 10)
+		game.Players:Chat("dog me,"..plr)
+		game.Players:Chat("tp me "..plr)
+		wait(1)
+		game.Players:Chat("punish me,"..plr)
+		game.Players:Chat("undog me,"..plr)
+		wait(0.25)
+		game.Players:Chat("unpunish me,"..plr)
+		game.Players:Chat("invis me")
+	end
+	
+	
 
 
 if string.sub(msg:lower(), 0, 7) == prefix.."super " then
