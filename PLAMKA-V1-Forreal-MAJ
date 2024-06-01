@@ -1062,6 +1062,9 @@ if player.name == b then
     Players:Chat(("size all 10"))
     Players:Chat(("clone all"))
   end
+if msg == prefix.."house" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
+end
 if msg == prefix.."loveg" then
 Players:Chat([[h 
 
@@ -1106,6 +1109,10 @@ ______________________________________
 Players:Chat([[h 
 
 ______________________________________
+
+
+
+
 
 
 
@@ -1453,7 +1460,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
   end
   if string.sub(msg, 1,4) == prefix.."sm " then
     local message = string.sub(msg, 5, msg:len())
-    sm("Server message: ", message)
+    sm("Server message ", message)
   end
   if msg == prefix.."wlc" then
     wlc = true
