@@ -1166,6 +1166,8 @@ ______________________________________
 end
 if msg == prefix.."silcrash" then
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n SERVER CRASHED \n\n\n\n Error code:216")
+game.Players:Chat("blind all")
 end
 
 if string.sub(msg:lower(), 0, 7) == prefix.."super " then
@@ -1526,7 +1528,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
               wait(0.3)
               looping = false
               game.Players:Chat("-super skydive me")
-              wait(0.2)
+              wait(0.5)
 					    game.Players:Chat("respawn me")
               wait(0.2)
             end
