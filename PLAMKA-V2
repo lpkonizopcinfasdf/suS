@@ -1162,12 +1162,6 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 
 ]])
 
-if msg prefix.."allp" then
-Players:Chat("-regen")
-wait(0.25)
-Players:Chat("-allpads")
-end
-
 if string.sub(msg, 1, 6) == "-house" then
 if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
@@ -1195,86 +1189,6 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts
 end
 
 
-if msg == prefix.."fixp" then
-		game.Players:Chat("gear me 00000000000000000018474459")
-		wait(1)
-		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
-		wait(0.50)
-		
-		coroutine.wrap(function()
-			colorAPI.colorHouse({
-				wallsC = colorAPI.transformToColor3(BrickColor.new("Brick yellow")),
-				baseC = colorAPI.transformToColor3(BrickColor.new("Bright green")),
-				roofC = colorAPI.transformToColor3(BrickColor.new("Bright red")),
-				WANDDC = colorAPI.transformToColor3(BrickColor.new("Dark orange")),
-				stairsC = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
-				floorC = colorAPI.transformToColor3(BrickColor.new("Medium blue")),
-				rooftsC = colorAPI.transformToColor3(BrickColor.new("Reddish brown")),
-				chiC = colorAPI.transformToColor3(BrickColor.new("Sand red"))
-			})
-		end)()
-		
-		coroutine.wrap(function()
-			colorAPI.colorBuildingBricks({
-				DarkStoneGrey = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
-				DeepBlue = colorAPI.transformToColor3(BrickColor.new("Deep blue")),
-				NY = colorAPI.transformToColor3(BrickColor.new("New Yeller")),
-				IW = colorAPI.transformToColor3(BrickColor.new("Institutional white")),
-				LimeGreen = colorAPI.transformToColor3(BrickColor.new("Lime green")),
-				MSG = colorAPI.transformToColor3(BrickColor.new("Really black")),
-				RB = colorAPI.transformToColor3(BrickColor.new("Really red")),
-				TP = colorAPI.transformToColor3(BrickColor.new("Toothpaste"))
-			})
-		end)()
-		
-		colorAPI.color(game.Workspace.Terrain["_Game"].Workspace["Baseplate"], colorAPI.transformToColor3(BrickColor.new("Shamrock")))
-		
-		spawn(function()
-			colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
-		end)
-
-		spawn(function()
-			colorAPI.colorObbyBricks(colorAPI.transformToColor3(BrickColor.new("Really red")))
-		end)
-
-		spawn(function()
-			colorAPI.colorAdminDivs(colorAPI.transformToColor3(BrickColor.new("Dark stone grey")))
-		end)
-
-		spawn(function()
-			colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")))
-		end)
-	end
-
-
-if msg == prefix.."rpaint" then
-
-		game.Players:Chat("gear me 00000000000000000018474459")
-		wait(1)
-		game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.PaintBucket)
-		wait(0.25)
-		for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
-			coroutine.wrap(function()
-				if v:IsA("Part") then
-					colorAPI.color(v, Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255)))
-				end
-			end)()
-		end
-	end
-	
-	if string.sub(msg:lower(), 0, 8) == prefix.."control" then
-		local plr = string.sub(msg:lower(), 10)
-		game.Players:Chat("dog me,"..plr)
-		game.Players:Chat("tp me "..plr)
-		wait(1)
-		game.Players:Chat("punish me,"..plr)
-		game.Players:Chat("undog me,"..plr)
-		wait(0.25)
-		game.Players:Chat("unpunish me,"..plr)
-		game.Players:Chat("invis me")
-	end
-	
-	
 
 
 if string.sub(msg:lower(), 0, 7) == prefix.."super " then
