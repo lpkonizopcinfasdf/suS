@@ -1163,11 +1163,31 @@ LOVE GOD😊💗💗💞💕❣️💕💗🩷💛💚
 ______________________________________
 
 ]])
+
+if string.sub(msg, 1, 6) == "-house" then
+if string.sub(msg, 8, 9) == "me" or string.sub(msg, 8, 8) == "" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
+elseif string.sub(msg, 8, 10) == "all" then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
+wait(0.25)
+game:GetService'Players':Chat(("tp all me"))
+else
+local plrname = string.sub(msg, 8)
+local loc = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+wait(0.125)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-23.4106693, 8.22999954, 63.2581749))
+wait(0.25)
+game:GetService'Players':Chat(("tp "..plrname.." me"))
+wait(0.25)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = loc
+end
+end
 end
 if msg == prefix.."silcrash" then
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n SERVER CRASHED \n\n\n\n Error code:216")
 game.Players:Chat("blind all")
+wait(0.25)
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 end
 
 if string.sub(msg:lower(), 0, 7) == prefix.."super " then
@@ -1423,7 +1443,7 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
       end
     end
   end
-  if msg == prefix.."house" then
+  if msg == prefix.."testingrightnow" then
     if player.name == Players.LocalPlayer.name then
       local pos = CFrame.new(-12.5,8,94.5) 
       Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
@@ -1667,6 +1687,8 @@ game.Players:Chat(prefix.."noperm")
 game.Players:Chat(prefix.."unperm")
 game.Players:Chat(prefix.."perm")
 game.Players:Chat(prefix.."perm")
+game.Players:Chat(prefix.."antikill on")
+game.Players:Chat(prefix.."antikill")
 wait(1)
 game.Players:Chat(prefix.."loveg")
 
