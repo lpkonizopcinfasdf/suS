@@ -1197,29 +1197,6 @@ if string.sub(msg:lower(), 0, 7) == prefix.."super " then
 		end
 	end
 
--- Rail testing
-
-if msg  prefix..== "slowrail" then -- How you add cmds, you might have to change this
-            shared.railgunspam = true; -- Toggle
-            local var = string.sub(msg,space+1) -- might have to change this
-            local target = GetPlayer(var) -- might have to change this
-            local plr = game:GetService("Players").LocalPlayer
-            local pack = plr.Backpack
-            pack.ChildAdded:Connect(function(Tool)
-                    if Tool.Name == "Railgun" then
-                        game:GetService("RunService").Heartbeat:wait()
-                        Tool.Name = "_"
-                        plr.Character:FindFirstChildOfClass("Humanoid"):EquipTool(Tool)
-                        game:GetService("RunService").Heartbeat:wait()
-                        Tool:WaitForChild("Click"):FireServer(target.Character.HumanoidRootPart.Position) -- might have to change the "target.Character.HumanoidRootPart.Position"
-                    end
-            end)
-            game.Players:Chat("spin")
-            game.Players:Chat("ff")
-            while shared.railgunspam == true do game:GetService("RunService").Heartbeat:wait()
-                game.Players:Chat("gear me 00000000000000000079446473")
-            end
-        end
   if msg == prefix.."antikill on" then
     if nokill == true then
       alert(player, "NoKill Already Enabled")
